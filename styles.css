@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Steinbeck";
+  src: url("SteinbeckRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Steinbeck", Arial, sans-serif;
+  background: rgb(130, 113, 93);
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+#text-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+  font-size: 30px;
+  background-color: rgba(255, 179, 244, 0);
+  color: rgb(239, 255, 16);
+  overflow: hidden;
+  position: relative;
+}
+
+.draggable {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
+  cursor: move;
+  position: relative;
+  transition: transform 4s ease-in-out;
+}
+
+.red-text {
+  color: rgb(203, 203, 203);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(42, 22, 22, 0);
+  border: 3px;
+  border-color: rgb(42, 22, 22);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(203, 203, 203);
+  width: min-content;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(171, 122, 122, 0);
+}
